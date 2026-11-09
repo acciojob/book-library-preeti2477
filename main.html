@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Library</title>
+<style>
+  body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .book-library {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .book {
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+  }
+  .book img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .book h3 {
+    margin: 12px 0 5px 0;
+    font-size: 18px;
+  }
+  .book .author {
+    color: #777777;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .book .price, .book .price-block {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<h1 style="text-align:center;">My Book Library</h1>
+
+<div class="book-library">
+  <!-- Book 1 -->
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400" alt="Spy in the Amber">
+    <h3 class="title">Spy in the Amber</h3>
+    <p class="author">By Author A</p>
+    <p class="price">$19.99</p>
+  </div>
+
+  <!-- Book 2 -->
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400" alt="Sacred Games">
+    <h3 class="title">Sacred Games</h3>
+    <p class="author">Vikram Chandra</p>
+    <p class="price">$24.99</p>
+  </div>
+
+  <!-- Book 3 -->
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400" alt="Byomkesh Bakshi">
+    <h3 class="title">Byomkesh Bakshi</h3>
+    <p class="author">Sharadindu Bandyopadhyay</p>
+    <p class="price">$14.99</p>
+  </div>
+</div>
 
 </body>
-
 </html>
